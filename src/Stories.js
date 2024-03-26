@@ -11,8 +11,8 @@ const Stories = () => {
   }
   
   return <section className='stories'>
-    {hits.map((storie) => {
-      
+    {hits.map((story) => {
+      return <article></article>
     })}
   </section>
 }
