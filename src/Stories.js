@@ -10,7 +10,11 @@ const Stories = () => {
     return <div className='loading'></div>
   }
   
-  return <h2>stories component</h2>
+  return <section className='stories'>
+    {hits.map(() => {
+      
+    })}
+  </section>
 }
 
 export default Stories
