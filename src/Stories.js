@@ -23,7 +23,9 @@ const Stories = () => {
           <a href={url} className='read-link'>
             read more
           </a>
-          <button className='remove-btn'></button>
+          <button className='remove-btn'>
+            remove
+          </button>
         </div>
       </article>
     })}
