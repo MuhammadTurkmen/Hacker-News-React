@@ -23,6 +23,11 @@ const AppProvider = ({ children }) => {
   
   const fetchStories = async (url) => {
     dispatch({type: SET_LOADING})
+    try {
+      
+    } catch (error) {
+      
+    }
   }
   
   useEffect(() => {
