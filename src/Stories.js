@@ -12,7 +12,7 @@ const Stories = () => {
   
   return <section className='stories'>
     {hits.map((story) => {
-      return <article></article>
+      return <article className='story'>single story</article>
     })}
   </section>
 }
