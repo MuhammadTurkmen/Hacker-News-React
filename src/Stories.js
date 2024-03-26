@@ -26,7 +26,7 @@ const Stories = () => {
           <button className='remove-btn'> 
             remove
           </button>
-        </div>
+        </div> 
       </article>
     })}
   </section>
