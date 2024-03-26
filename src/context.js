@@ -19,9 +19,13 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
   
   const fetchStories = async (url) => {
-
+    dispatch({type: 'SET_LOADING'})
   }
   
+  useEffect(() => {
+
+  }, [])
+
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
 }
 // make sure use
