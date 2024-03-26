@@ -23,7 +23,7 @@ const AppProvider = ({ children }) => {
   }
   
   useEffect(() => {
-
+    fetchStories()
   }, [])
 
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
