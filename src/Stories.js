@@ -7,7 +7,7 @@ const Stories = () => {
 
   
   if(isLoading) {
-    
+    return <div className='loading'></div>
   }
   
   return <h2>stories component</h2>
