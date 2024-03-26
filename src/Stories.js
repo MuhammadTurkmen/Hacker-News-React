@@ -20,7 +20,9 @@ const Stories = () => {
           {num_comments} comments
         </p>
         <div>
-          <a href={url}></a>
+          <a href={url} className='read-link'>
+
+          </a>
         </div>
       </article>
     })}
