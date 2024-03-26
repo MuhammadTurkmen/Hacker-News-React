@@ -18,7 +18,9 @@ const AppContext = React.createContext()
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
   
-  const fetchStories = async
+  const fetchStories = async (url) => {
+
+  }
   
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
 }
