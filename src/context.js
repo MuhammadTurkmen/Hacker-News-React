@@ -17,11 +17,14 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
+  
+  const fetchStories = async
+  
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
 }
 // make sure use
 export const useGlobalContext = () => {
-  return useContext(AppContext)
+  return useContext(AppContext) 
 }
 
 export { AppContext, AppProvider }
