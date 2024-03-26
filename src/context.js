@@ -36,7 +36,7 @@ const AppProvider = ({ children }) => {
   }
   
   useEffect(() => {
-    fetchStories(`${API_ENDPOINT}query=${state.query}`)
+    fetchStories(`${API_ENDPOINT}query=${state.query}&page=${state.page}`)
   }, [])
 
   return <AppContext.Provider value={{...state}}>{children}</AppContext.Provider>
