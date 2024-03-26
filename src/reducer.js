@@ -9,7 +9,7 @@ import {
 const reducer = (state, action) => {
 
   switch(action.type) {
-    case 'SET_LOADING': 
+    case SET_LOADING: 
       return {...state, isLoading: true}
     
   default: 
