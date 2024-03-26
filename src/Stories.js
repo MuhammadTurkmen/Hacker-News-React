@@ -19,7 +19,9 @@ const Stories = () => {
           {points} points by <span>{author} | </span> 
           {num_comments} comments
         </p>
-        <div></div>
+        <div>
+          <a href={url}></a>
+        </div>
       </article>
     })}
   </section>
