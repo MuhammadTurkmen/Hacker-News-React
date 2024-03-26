@@ -30,6 +30,7 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(url)
       const data = await response.json()
+      dispatch({type: SET_STORIES})
     } catch (error) {
       console.log(error);
     }
