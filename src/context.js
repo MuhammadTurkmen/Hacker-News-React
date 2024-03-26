@@ -26,7 +26,7 @@ const AppProvider = ({ children }) => {
     try {
       
     } catch (error) {
-      
+      console.log(error);
     }
   }
   
