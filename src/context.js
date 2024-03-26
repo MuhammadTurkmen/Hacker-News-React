@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
   
   const fetchStories = async (url) => {
-    dispatch({type: 'SET_LOADING'})
+    dispatch({type: SET_LOADING})
   }
   
   useEffect(() => {
