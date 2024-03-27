@@ -48,7 +48,7 @@ const AppProvider = ({ children }) => {
     dispatch({type: HANDLE_PAGE, payload: value})
   }
   
-  
+   
   useEffect(() => {
     fetchStories(`${API_ENDPOINT}query=${state.query}&page=${state.page}`)
   }, [state.query, state.page])
