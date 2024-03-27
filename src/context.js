@@ -39,6 +39,10 @@ const AppProvider = ({ children }) => {
   const removeStory = (id) => {
     dispatch({type: REMOVE_STORY, payload: id})
   }
+
+  const handleSearch = (query) => {
+
+  }
   
   useEffect(() => {
     fetchStories(`${API_ENDPOINT}query=${state.query}&page=${state.page}`)
