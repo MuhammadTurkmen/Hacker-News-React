@@ -41,7 +41,7 @@ const AppProvider = ({ children }) => {
   }
 
   const handleSearch = (query) => {
-
+    dispatch({type: HANDLE_SEARCH})
   }
   
   useEffect(() => {
