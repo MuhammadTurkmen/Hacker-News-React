@@ -28,6 +28,7 @@ const reducer = (state, action) => {
     case HANDLE_PAGE:
       if(action.payload === 'inc') {
         let nextPage = state.page + 1
+        if(nextPage > state.nbPages - 1)
       }
     default: 
       throw new Error (`no matching "${action.type}" action type`)
