@@ -3,7 +3,7 @@ import { useGlobalContext } from './context'
 
 const Buttons = () => {
   const {isLoading, page, nbPages, handlePage} = useGlobalContext()
-  return <h2>button container</h2>
+  return <div className='btn-container'>button container</div>
 }
  
 export default Buttons
