@@ -35,6 +35,10 @@ const AppProvider = ({ children }) => {
       console.log(error);
     }
   }
+
+  const removeStory = (id) => {
+
+  }
   
   useEffect(() => {
     fetchStories(`${API_ENDPOINT}query=${state.query}&page=${state.page}`)
