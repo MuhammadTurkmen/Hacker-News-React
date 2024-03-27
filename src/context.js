@@ -43,6 +43,11 @@ const AppProvider = ({ children }) => {
   const handleSearch = (query) => {
     dispatch({type: HANDLE_SEARCH, payload: query})
   }
+
+  const handlePage = (value) => {
+    
+  }
+  
   
   useEffect(() => {
     fetchStories(`${API_ENDPOINT}query=${state.query}&page=${state.page}`)
