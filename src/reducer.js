@@ -31,6 +31,7 @@ const reducer = (state, action) => {
         if(nextPage > state.nbPages - 1) {
           nextPage = 0
         }
+        return {...state, page: nextPage}
       }
     default: 
       throw new Error (`no matching "${action.type}" action type`)
