@@ -23,7 +23,7 @@ const Stories = () => {
           <a href={url} className='read-link' target='_blank' rel="noreferrer">
             read more
           </a>
-          <button className='remove-btn'> 
+          <button className='remove-btn' onClick={() => removeStory(objectID)}> 
             remove
           </button>
         </div>
