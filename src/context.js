@@ -41,7 +41,7 @@ const AppProvider = ({ children }) => {
   }
 
   const handleSearch = (query) => {
-    dispatch({type: HANDLE_SEARCH})
+    dispatch({type: HANDLE_SEARCH, payload: query})
   }
   
   useEffect(() => {
