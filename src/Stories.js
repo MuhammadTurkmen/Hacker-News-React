@@ -27,7 +27,7 @@ const Stories = () => {
             remove
           </button>
         </div>
-      </article>
+      </article> 
     })}
   </section>
 }
