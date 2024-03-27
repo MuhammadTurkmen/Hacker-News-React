@@ -4,7 +4,9 @@ import { useGlobalContext } from './context'
 const Buttons = () => {
   const {isLoading, page, nbPages, handlePage} = useGlobalContext()
   return <div className='btn-container'>
-    <button disabled={isLoading}></button>
+    <button disabled={isLoading} onClick={() => handlePage('decrease')}>
+      prev
+    </button>
   </div>
 }
  
